@@ -7,8 +7,10 @@ const listaDeAlunosEMedias = [alunos, medias];
 
 function exibeNomeENota(aluno) {
   if (listaDeAlunosEMedias[0].includes(aluno)) {
-    const alunos = listaDeAlunosEMedias[0];
-    const medias = listaDeAlunosEMedias[1];
+    //const alunos = listaDeAlunosEMedias[0];
+    //const medias = listaDeAlunosEMedias[1];
+    const [alunos, medias ] = listaDeAlunosEMedias;
+    
     const indice = alunos.indexOf(aluno);
     const mediasDoAluno = medias[indice];
     console.log(`${aluno} tem a media ${mediasDoAluno}`);
@@ -16,4 +18,4 @@ function exibeNomeENota(aluno) {
     console.log("Aluno não encontrado!");
   }
 }
-exibeNomeENota("João");
+exibeNomeENota("Ana");
